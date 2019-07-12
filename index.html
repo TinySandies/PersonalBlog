@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="zh" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>TinySand的足迹</title>
+    <link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--  堆叠式导航菜单样式  -->
+    <link rel="stylesheet" type="text/css" href="css/framework/default.css"/>
+    <link rel="stylesheet" type="text/css" href="css/framework/component.css"/>
+
+    <!--  栅格动画背景样式  -->
+    <link rel="stylesheet" type="text/css" href="css/carousel/banner.css">
+
+    <!--  登录窗口样式  -->
+    <link rel="stylesheet" type="text/css" href="css/entry/styles.css">
+
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/framework/modernizr-custom.js"></script>
+</head>
+<body>
+<div class="banner" id="banner1" style="position: fixed; top: 0; left: 0;">
+    <div class="banner-view"></div>
+    <div class="banner-btn"></div>
+    <div class="banner-number"></div>
+    <div class="banner-progress"></div>
+</div>
+
+<!-- navigation -->
+<nav class="pages-nav">
+    <div class="pages-nav__item"><a class="link link--page" href="#page-home">首页</a></div>
+    <div class="pages-nav__item"><a class="link link--page" href="#page-docu">随笔</a></div>
+    <div class="pages-nav__item"><a class="link link--page" href="#page-manuals">留言</a></div>
+    <div class="pages-nav__item"><a class="link link--page" href="#page-software">分类导航</a></div>
+    <div class="pages-nav__item"><a class="link link--page" href="#page-custom">注册 &amp; 登录</a></div>
+    <div class="pages-nav__item"><a class="link link--page" href="#page-training">用户中心</a></div>
+    <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-buy">资源下载</a>
+    </div>
+    <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-blog">管理
+        &amp; 设置</a></div>
+    <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded"
+                                                           href="#page-contact">文章归档</a>
+    </div>
+    <div class="pages-nav__item pages-nav__item--social">
+        <a class="link link--social link--faded" href="#"><i class="fa fa-twitter"></i><span
+                class="text-hidden">Twitter</span></a>
+        <a class="link link--social link--faded" href="#"><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
+        <a class="link link--social link--faded" href="#"><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
+        <a class="link link--social link--faded" href="#"><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
+    </div>
+</nav>
+<!-- /navigation-->
+<!-- pages stack -->
+<div class="pages-stack" style="z-index: 1000;">
+    <!-- page -->
+    <div class="page" id="page-home">
+        <!-- Blueprint header -->
+        <header class="bp-header cf">
+            <h1 class="bp-header__title" style="font-size: 6vh;">博客首页</h1>
+        </header>
+    </div>
+    <!-- /page -->
+    <div class="page" id="page-docu">
+        <header class="bp-header cf">
+            <h1 class="bp-header__title">Documentation</h1>
+            <p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a
+                    href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+        </header>
+    </div>
+
+    <div class="page" id="page-manuals">
+        <header class="bp-header cf">
+            <h1 class="bp-header__title">Manuals</h1>
+            <p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a
+                    href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+        </header>
+    </div>
+
+    <div class="page" id="page-software">
+        <header class="bp-header cf">
+            <h1 class="bp-header__title">Software &amp; Downloads</h1>
+            <p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a
+                    href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+        </header>
+    </div>
+
+    <div class="page" id="page-custom">
+        <header class="bp-header cf">
+            <h1 class="bp-header__title">注册 &amp; 登录</h1>
+        </header>
+        <div class='login'>
+            <div class='login_title'>
+                <span>账号登陆</span>
+            </div>
+            <div class='login_fields'>
+                <div class='login_fields__user'>
+                    <div class='icon'>
+                        <img src='images/entry/user_icon_copy.png' alt="account">
+                    </div>
+                    <label for="account"></label>
+                    <input placeholder='账号' id="account" type='text'/>
+                    <div class='validation'>
+                        <img src='images/entry/tick.png' alt="valid">
+                    </div>
+                </div>
+
+                <div class='login_fields__password'>
+                    <div class='icon'>
+                        <img src='images/entry/lock_icon_copy.png' alt="lock">
+                    </div>
+                    <label for="password"></label>
+                    <input placeholder='密码' id="password" type='password'>
+                    <div class='validation'>
+                        <img src='images/entry/tick.png' alt="valid">
+                    </div>
+                </div>
+
+                <div class='login_fields__submit'>
+                    <input type='submit' value='登录'>
+                    <div class='forgot'>
+                        <a href='#'>忘记密码？</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class='success'>
+                <h2>登录成功</h2>
+                <p>欢迎回来</p>
+            </div>
+
+            <div class='disclaimer'>
+                <p>注册时所用的邮箱号即是您的登录账号</p>
+            </div>
+
+        </div>
+
+        <div class='authorize'>
+            <img src='images/entry/puff.svg' alt="">
+            <p>身份认证...</p>
+        </div>
+    </div>
+
+    <div class="page" id="page-training">
+        <header class="bp-header cf">
+            <h1 class="bp-header__title">Training &amp; Learning Center</h1>
+            <p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a
+                    href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+        </header>
+    </div>
+
+    <div class="page" id="page-buy">
+        <header class="bp-header cf">
+            <h1 class="bp-header__title">Where to buy</h1>
+            <p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a
+                    href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+        </header>
+    </div>
+
+    <div class="page" id="page-blog">
+
+    </div>
+
+    <div class="page" id="page-contact">
+        <header class="bp-header cf">
+            <h1 class="bp-header__title">Contact</h1>
+
+        </header>
+    </div>
+</div>
+<!-- /pages-stack -->
+<button class="menu-button"><span>Menu</span></button>
+
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script src="http://cdn.bootcss.com/jqueryui/1.11.0/jquery-ui.min.js"></script>
+
+<!--  堆叠式导航布局脚本  -->
+<script type="text/javascript" src="js/framework/classier.js"></script>
+<script type="text/javascript" src="js/framework/main.js"></script>
+
+<!--  栅格动画背景脚本  -->
+<script type="text/javascript" src="js/carousel/banner.js"></script>
+
+
+<script type="text/javascript">
+    const banner = new FragmentBanner({
+        container: "#banner1",//选择容器 必选
+        images: ['images/background/1.jpg', 'images/background/2.jpg', 'images/background/3.jpg'],//图片集合 必选
+        //行数与列数 可选
+        grid: {
+            line: 12,
+            list: 14
+        },
+        index: 0,//图片集合的索引位置 可选
+        type: 2,//切换类型 1 ， 2 可选
+        boxTime: 5000,//小方块来回运动的时长 可选
+        fnTime: 10000//banner切换的时长 可选
+    });
+
+    $('input[type="submit"]').click(function () {
+        $('.login').addClass('test');
+        setTimeout(function () {
+            $('.login').addClass('check');
+        }, 300);
+
+        const authorize = $('.authorize');
+        setTimeout(function () {
+            authorize.show().animate({right: -320}, {
+                easing: 'easeOutQuint',
+                duration: 600,
+                queue: false
+            });
+            authorize.animate({opacity: 1}, {
+                duration: 200,
+                queue: false
+            }).addClass('visible');
+        }, 500);
+        setTimeout(function () {
+            authorize.show().animate({right: 90}, {
+                easing: 'easeOutQuint',
+                duration: 600,
+                queue: false
+            });
+            authorize.animate({opacity: 0}, {
+                duration: 200,
+                queue: false
+            }).addClass('visible');
+            $('.login').removeClass('check');
+        }, 2500);
+        setTimeout(function () {
+            $('.login').removeClass('test');
+            $('.login div').fadeOut(123);
+        }, 2800);
+        setTimeout(function () {
+            $('.success').fadeIn();
+        }, 3200);
+    });
+
+    const inputBox = $('input[type="text"],input[type="password"]');
+    inputBox.focus(function () {
+        $(this).prev().animate({'opacity': '1'}, 200);
+    });
+    inputBox.blur(function () {
+        $(this).prev().animate({'opacity': '.5'}, 200);
+    });
+    inputBox.keyup(function () {
+        if (!($(this).val() === '')) {
+            $(this).next().animate({
+                'opacity': '1',
+                'right': '30'
+            }, 200);
+        } else {
+            $(this).next().animate({
+                'opacity': '0',
+                'right': '20'
+            }, 200);
+        }
+    });
+</script>
+</body>
+</html>
